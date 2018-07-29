@@ -10,6 +10,7 @@ public class BCryptUtil {
     public static String encode(String password){
         PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         String hashPass = passwordEncoder.encode(password);
+        //nini
         return hashPass;
     }
     public static boolean matches(String password,String hashPass){
